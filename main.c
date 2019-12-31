@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include<string.h>
 
 struct BasicInfo{
     char name[20];
@@ -110,7 +109,7 @@ int main()
     char profile[3][30];
     char id[3][15]={"LinkedIn: ","Github: ","HackerRank: "};
     fprintf(fp,"\nOTHER PROFILES-\n");
-    printf("\n\t\tOther Profiles:\n");e
+    printf("\n\t\tOther Profiles:\n");
     for(i=0; i<3; i++){
             printf("%s ",id[i]);
             gets(profile[i]);
@@ -119,8 +118,8 @@ int main()
     fprintf(fp,"\n\n---------------------------------------------------------------------\n");
 
 
+    printf("Resume created successfully at D:\\Resume.txt!!\n");
     fclose(fp);
-    printf("Resume created successfully at D:\\Resume.txt!!");
-
+    system("pause");
     return 0;
 }
